@@ -20,7 +20,8 @@ body {
 .header {
     background-color: var(--cor-header);
     padding: 1% 15%;
-
+    position: sticky;
+    top: 0;
 }
 .header__block{
     display: flex;
@@ -43,8 +44,54 @@ body {
     justify-content: space-around;
     padding: 5% 15%;
 }
+.content__firstblock__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background: white;
+    aspect-ratio: 16/9;
+    border: 2px dashed;
+    cursor: pointer;
+}
+
+.content__firstblock__picture:hover {
+    background: #eeeeee;
+}
+.content__firstblock__picture__input {
+    display: none;
+}
 .content__secondblock {
     display: flex;
     flex-direction: column;
+    gap: 50px;
     padding: 5% 15%;
+}
+.content__thirdblock {
+    display: flex;
+    flex-direction: column;
+    padding: 5% ;
+    gap: 50px;
+}
+.content__thirdblock__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background: white;
+    aspect-ratio: 16/9;
+    border: 2px dashed;
+    cursor: pointer;
+}
+.content__thirdblock__picture:hover {
+    background: #eeeeee;
+}
+.content__thirdblock__picture__input {
+    display: none;
+}
+.content__thirdblock__images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
